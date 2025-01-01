@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react-native"
+import { fireEvent, render, screen } from "@testing-library/react-native"
 import { SelectList } from '@components/SelectList'
 import { CityProps } from "@services/getCityByNameService"
 
@@ -18,6 +18,6 @@ describe('Component: SelectList', () => {
     )
 
     const selectedCity = screen.getByText(/campo/i);
-    console.log(selectedCity);
+    fireEvent.press(selectedCity);
   });
 });
