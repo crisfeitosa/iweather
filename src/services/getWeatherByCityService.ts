@@ -43,7 +43,7 @@ export type WeatherResponseProps = {
 }
 
 export async function getWeatherByCityService({ latitude, longitude }: SearchCityWeatherProps): Promise<WeatherResponseProps> {
-  const { data } = await api.get<WeatherAPIResponseProps>(`/forecast?lat=${latitude}&lon=${longitude}`);
+  const { data } = await api.get<WeatherAPIResponseProps>(`/forecast?lat=${latitude}&lon=${longitude}&appid=${process.env.EXPO_PUBLIC_WEATHER_APP_ID}`);
   const { main, weather, wind, pop } = data.list[0];
 
   const today = {
