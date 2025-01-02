@@ -171,13 +171,13 @@ FN:18,removeStorageCity
 FNF:3
 FNH:3
 FNDA:10,getStorageCity
-FNDA:7,saveStorageCity
+FNDA:6,saveStorageCity
 FNDA:1,removeStorageCity
 DA:4,5
 DA:7,10
 DA:9,10
 DA:11,10
-DA:15,7
+DA:15,6
 DA:19,1
 LF:6
 LH:6
